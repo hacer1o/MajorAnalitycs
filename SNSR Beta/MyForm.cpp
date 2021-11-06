@@ -12,6 +12,7 @@ using namespace System::Collections;
 using namespace System::Windows::Forms;
 using namespace System::Data;
 using namespace System::Drawing;
+using namespace System::Threading;
 using namespace std;
 
 const int l1_arr = 300;
@@ -138,7 +139,6 @@ void neyrostart() {
 	i += 30;
 	ney1_10 = layer1(inney1, inney2, inney3, inney4, inney5, inney6, inney7, inney8, inney9, inney10, inney11, inney12, inney13, inney14, inney15, inney16, inney17, inney18, inney19, inney20, inney21, inney22, inney23, inney24, inney25, inney26, inney27, inney28, inney29, inney30, l1s[i + 1], l1s[i + 2], l1s[i + 3], l1s[i + 4], l1s[i + 5], l1s[i + 6], l1s[i + 7], l1s[i + 8], l1s[i + 9], l1s[i + 10], l1s[i + 11], l1s[i + 12], l1s[i + 13], l1s[i + 14], l1s[i + 15], l1s[i + 16], l1s[i + 17], l1s[i + 18], l1s[i + 19], l1s[i + 20], l1s[i + 21], l1s[i + 22], l1s[i + 23], l1s[i + 24], l1s[i + 25], l1s[i + 26], l1s[i + 27], l1s[i + 28], l1s[i + 29], l1s[i + 30], q1);
 	i = -1;
-
 	//**********************************************************************
 
 	ney2_1 = layer2(ney1_1, ney1_2, ney1_3, ney1_4, ney1_5, ney1_6, ney1_7, ney1_8, ney1_9, ney1_10, l2s[i + 1], l2s[i + 2], l2s[i + 3], l2s[i + 4], l2s[i + 5], l2s[i + 6], l2s[i + 7], l2s[i + 8], l2s[i + 9], l2s[i + 10], q2);
@@ -335,7 +335,6 @@ System::Void SNSRBeta::MyForm::button1_Click(System::Object^ sender, System::Eve
 		inney28 = (t1 == 28 || t2 == 28) ? 1 : 0;
 		inney29 = (t1 == 29 || t2 == 29) ? 1 : 0;
 		inney30 = (t1 == 30 || t2 == 30) ? 1 : 0;
-
 		neyrostart();
 		team1 = t1;
 		team2 = t2;
@@ -419,7 +418,7 @@ System::Void SNSRBeta::MyForm::button1_Click(System::Object^ sender, System::Eve
 
 System::Void SNSRBeta::MyForm::label5_Click(System::Object^ sender, System::EventArgs^ e)
 {
-	MessageBox::Show("Разработчик @hacerio. Особая благодарность Vadimka", "");
+	MessageBox::Show("Разработчик @hacerio. Особая благодарность @vadimbrovich:)", "");
 }
 
 System::Void SNSRBeta::MyForm::label14_Click(System::Object^ sender, System::EventArgs^ e)
