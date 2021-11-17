@@ -1,4 +1,5 @@
 ﻿#include "MyForm.h"
+#include "Neyro.h"
 #include <Windows.h>
 #include <iostream>
 #include <cmath>
@@ -102,21 +103,6 @@ int ney4_11; int ney4_12; int ney4_13; int ney4_14; int ney4_15;
 
 //******************************************
 
-int layer1(int n1, int n2, int n3, int n4, int n5, int n6, int n7, int n8, int n9, int n10, int n11, int n12, int n13, int n14, int n15, int n16, int n17, int n18, int n19, int n20, int n21, int n22, int n23, int n24, int n25, int n26, int n27, int n28, int n29, int n30, int w1, int w2, int w3, int w4, int w5, int w6, int w7, int w8, int w9, int w10, int w11, int w12, int w13, int w14, int w15, int w16, int w17, int w18, int w19, int w20, int w21, int w22, int w23, int w24, int w25, int w26, int w27, int w28, int w29, int w30, int q) {
-	return n1 * w1 + n2 * w2 + n3 * w3 + n4 * w4 + n5 * w5 + n6 * w6 + n7 * w7 + n8 * w8 + n9 * w9 + n10 * w10 + n11 * w11 + n12 * w12 + n13 * w13 + n14 * w14 + n15 * w15 + n16 * w16 + n17 * w17 + n18 * w18 + n19 * w19 + n20 * w20 + n21 * w21 + n22 * w22 + n23 * w23 + n24 * w24 + n25 * w25 + n26 * w26 + n27 * w27 + n28 * w28 + n29 * w29 + n30 * w30 + q;
-}
-int layer2(int n1, int n2, int n3, int n4, int n5, int n6, int n7, int n8, int n9, int n10, int w1, int w2, int w3, int w4, int w5, int w6, int w7, int w8, int w9, int w10, int q) {
-	return n1 * w1 + n2 * w2 + n3 * w3 + n4 * w4 + n5 * w5 + n6 * w6 + n7 * w7 + n8 * w8 + n9 * w9 + n10 * w10 + q;
-}
-int layer3(int n1, int n2, int n3, int n4, int n5, int n6, int n7, int n8, int n9, int n10, int w1, int w2, int w3, int w4, int w5, int w6, int w7, int w8, int w9, int w10, int q) {
-	return n1 * w1 + n2 * w2 + n3 * w3 + n4 * w4 + n5 * w5 + n6 * w6 + n7 * w7 + n8 * w8 + n9 * w9 + n10 * w10 + q;
-}
-int layer4(int n1, int n2, int n3, int n4, int n5, int n6, int n7, int n8, int w1, int w2, int w3, int w4, int w5, int w6, int w7, int w8, int q) {
-	return n1 * w1 + n2 * w2 + n3 * w3 + n4 * w4 + n5 * w5 + n6 * w6 + n7 * w7 + n8 * w8 + q;
-}
-int layer5(int n1, int n2, int n3, int n4, int n5, int n6, int n7, int n8, int n9, int n10, int n11, int n12, int n13, int n14, int n15, int w1, int w2, int w3, int w4, int w5, int w6, int w7, int w8, int w9, int w10, int w11, int w12, int w13, int w14, int w15, int q) {
-	return n1 * w1 + n2 * w2 + n3 * w3 + n4 * w4 + n5 * w5 + n6 * w6 + n7 * w7 + n8 * w8 + n9 * w9 + n10 * w10 + n11 * w11 + n12 * w12 + n13 * w13 + n14 * w14 + n15 * w15 + q;
-}
 void neyrostart() {
 	int i = -1;
 	ney1_1 = layer1(inney1, inney2, inney3, inney4, inney5, inney6, inney7, inney8, inney9, inney10, inney11, inney12, inney13, inney14, inney15, inney16, inney17, inney18, inney19, inney20, inney21, inney22, inney23, inney24, inney25, inney26, inney27, inney28, inney29, inney30, l1s[i + 1], l1s[i + 2], l1s[i + 3], l1s[i + 4], l1s[i + 5], l1s[i + 6], l1s[i + 7], l1s[i + 8], l1s[i + 9], l1s[i + 10], l1s[i + 11], l1s[i + 12], l1s[i + 13], l1s[i + 14], l1s[i + 15], l1s[i + 16], l1s[i + 17], l1s[i + 18], l1s[i + 19], l1s[i + 20], l1s[i + 21], l1s[i + 22], l1s[i + 23], l1s[i + 24], l1s[i + 25], l1s[i + 26], l1s[i + 27], l1s[i + 28], l1s[i + 29], l1s[i + 30], q1);

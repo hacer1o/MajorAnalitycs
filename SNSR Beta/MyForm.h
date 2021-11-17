@@ -418,6 +418,7 @@ namespace SNSRBeta {
 			this->AutoValidate = System::Windows::Forms::AutoValidate::Disable;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(13)), static_cast<System::Int32>(static_cast<System::Byte>(17)),
 				static_cast<System::Int32>(static_cast<System::Byte>(23)));
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
 			this->ClientSize = System::Drawing::Size(1264, 704);
 			this->Controls->Add(this->label16);
 			this->Controls->Add(this->label2);
