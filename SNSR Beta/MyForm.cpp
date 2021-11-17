@@ -274,6 +274,7 @@ void neyrostart() {
 	outney30 = layer5(ney4_1, ney4_2, ney4_3, ney4_4, ney4_5, ney4_6, ney4_7, ney4_8, ney4_9, ney4_10, ney4_11, ney4_12, ney4_13, ney4_14, ney4_15, l5s[i + 1], l5s[i + 2], l5s[i + 3], l5s[i + 4], l5s[i + 5], l5s[i + 6], l5s[i + 7], l5s[i + 8], l5s[i + 9], l5s[i + 10], l5s[i + 11], l5s[i + 12], l5s[i + 13], l5s[i + 14], l5s[i + 15], q5);
 	i = -1;
 }
+[STAThread]
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
     Application::EnableVisualStyles();
     Application::SetCompatibleTextRenderingDefault(false);
