@@ -39,34 +39,15 @@ namespace SNSRBeta {
 	private: System::Windows::Forms::Label^ label2;
 	protected:
 	private: System::Windows::Forms::Label^ label1;
-
-
-
-
-
 	private: System::Windows::Forms::Button^ button1;
-
 	private: System::Windows::Forms::Label^ label4;
-
-
-
-
-
-
-
 	private: System::Windows::Forms::Label^ label11;
-
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::Label^ label12;
 	private: System::Windows::Forms::Label^ label13;
 	private: System::Windows::Forms::Label^ label14;
-
-
 	private: System::Windows::Forms::Panel^ panel3;
-
-
-
 	private: System::Windows::Forms::Label^ label19;
 	private: System::Windows::Forms::Label^ label18;
 	private: System::Windows::Forms::Label^ label17;
@@ -75,28 +56,10 @@ namespace SNSRBeta {
 	private: System::Windows::Forms::Label^ label21;
 	private: System::Windows::Forms::Label^ label20;
 	private: System::Windows::Forms::Label^ label6;
-
-
-
-
-
-
-
-
-
 	private: System::Windows::Forms::Label^ label16;
+	private: System::Windows::Forms::Label^ label3;
 
 	private:
-
-
-
-
-
-
-
-
-
-
 
 	private:
 		/// <summary>
@@ -130,6 +93,7 @@ namespace SNSRBeta {
 			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->label14 = (gcnew System::Windows::Forms::Label());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
+			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label16 = (gcnew System::Windows::Forms::Label());
 			this->panel3->SuspendLayout();
@@ -142,9 +106,9 @@ namespace SNSRBeta {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Verdana", 25, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label2->ImageAlign = System::Drawing::ContentAlignment::TopCenter;
-			this->label2->Location = System::Drawing::Point(162, 1);
+			this->label2->Location = System::Drawing::Point(84, 1);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(1007, 66);
+			this->label2->Size = System::Drawing::Size(1176, 66);
 			this->label2->TabIndex = 0;
 			this->label2->Text = L"Major Analytics";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -156,9 +120,9 @@ namespace SNSRBeta {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->label1->Font = (gcnew System::Drawing::Font(L"Verdana", 13, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label1->Location = System::Drawing::Point(162, 67);
+			this->label1->Location = System::Drawing::Point(73, 67);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(1007, 55);
+			this->label1->Size = System::Drawing::Size(1187, 55);
 			this->label1->TabIndex = 1;
 			this->label1->Text = L"Выберите команды, которые будут играть и нажмите запустить";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -177,11 +141,10 @@ namespace SNSRBeta {
 			this->button1->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(26)),
 				static_cast<System::Int32>(static_cast<System::Byte>(34)), static_cast<System::Int32>(static_cast<System::Byte>(46)));
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button1->Font = (gcnew System::Drawing::Font(L"Verdana", 22, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->button1->Location = System::Drawing::Point(521, 140);
+			this->button1->Font = (gcnew System::Drawing::Font(L"Verdana", 20));
+			this->button1->Location = System::Drawing::Point(501, 140);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(275, 82);
+			this->button1->Size = System::Drawing::Size(295, 82);
 			this->button1->TabIndex = 6;
 			this->button1->Text = L"Запустить";
 			this->button1->UseVisualStyleBackColor = false;
@@ -189,23 +152,26 @@ namespace SNSRBeta {
 			// 
 			// label4
 			// 
-			this->label4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->label4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Verdana", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label4->Location = System::Drawing::Point(802, 148);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(258, 27);
+			this->label4->Size = System::Drawing::Size(212, 17);
 			this->label4->TabIndex = 8;
 			this->label4->Text = L"Шанс выиграша команды №";
 			this->label4->Click += gcnew System::EventHandler(this, &MyForm::label4_Click);
 			// 
 			// label23
 			// 
-			this->label23->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->label23->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label23->AutoSize = true;
 			this->label23->Font = (gcnew System::Drawing::Font(L"Verdana", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label23->Location = System::Drawing::Point(1146, 148);
+			this->label23->Location = System::Drawing::Point(1237, 148);
 			this->label23->Name = L"label23";
 			this->label23->Size = System::Drawing::Size(23, 17);
 			this->label23->TabIndex = 15;
@@ -213,11 +179,12 @@ namespace SNSRBeta {
 			// 
 			// label22
 			// 
-			this->label22->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->label22->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label22->AutoSize = true;
 			this->label22->Font = (gcnew System::Drawing::Font(L"Verdana", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label22->Location = System::Drawing::Point(1146, 205);
+			this->label22->Location = System::Drawing::Point(1237, 205);
 			this->label22->Name = L"label22";
 			this->label22->Size = System::Drawing::Size(23, 17);
 			this->label22->TabIndex = 14;
@@ -226,11 +193,12 @@ namespace SNSRBeta {
 			// 
 			// label21
 			// 
-			this->label21->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->label21->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label21->AutoSize = true;
 			this->label21->Font = (gcnew System::Drawing::Font(L"Verdana", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label21->Location = System::Drawing::Point(1104, 205);
+			this->label21->Location = System::Drawing::Point(1216, 208);
 			this->label21->Name = L"label21";
 			this->label21->Size = System::Drawing::Size(15, 17);
 			this->label21->TabIndex = 13;
@@ -238,11 +206,12 @@ namespace SNSRBeta {
 			// 
 			// label20
 			// 
-			this->label20->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->label20->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label20->AutoSize = true;
 			this->label20->Font = (gcnew System::Drawing::Font(L"Verdana", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label20->Location = System::Drawing::Point(1104, 148);
+			this->label20->Location = System::Drawing::Point(1216, 148);
 			this->label20->Name = L"label20";
 			this->label20->Size = System::Drawing::Size(15, 17);
 			this->label20->TabIndex = 12;
@@ -250,7 +219,8 @@ namespace SNSRBeta {
 			// 
 			// label19
 			// 
-			this->label19->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->label19->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label19->AutoSize = true;
 			this->label19->Font = (gcnew System::Drawing::Font(L"Verdana", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -262,11 +232,12 @@ namespace SNSRBeta {
 			// 
 			// label18
 			// 
-			this->label18->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->label18->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label18->AutoSize = true;
 			this->label18->Font = (gcnew System::Drawing::Font(L"Verdana", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label18->Location = System::Drawing::Point(1034, 205);
+			this->label18->Location = System::Drawing::Point(1080, 205);
 			this->label18->Name = L"label18";
 			this->label18->Size = System::Drawing::Size(15, 17);
 			this->label18->TabIndex = 10;
@@ -274,11 +245,12 @@ namespace SNSRBeta {
 			// 
 			// label17
 			// 
-			this->label17->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->label17->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label17->AutoSize = true;
 			this->label17->Font = (gcnew System::Drawing::Font(L"Verdana", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label17->Location = System::Drawing::Point(1034, 148);
+			this->label17->Location = System::Drawing::Point(1080, 148);
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(15, 17);
 			this->label17->TabIndex = 9;
@@ -304,10 +276,10 @@ namespace SNSRBeta {
 			this->textBox1->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->textBox1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(13)), static_cast<System::Int32>(static_cast<System::Byte>(17)),
 				static_cast<System::Int32>(static_cast<System::Byte>(23)));
-			this->textBox1->Location = System::Drawing::Point(162, 140);
+			this->textBox1->Location = System::Drawing::Point(84, 160);
 			this->textBox1->MaxLength = 2;
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(353, 14);
+			this->textBox1->Size = System::Drawing::Size(411, 14);
 			this->textBox1->TabIndex = 19;
 			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged);
 			// 
@@ -319,21 +291,22 @@ namespace SNSRBeta {
 			this->textBox2->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->textBox2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(13)), static_cast<System::Int32>(static_cast<System::Byte>(17)),
 				static_cast<System::Int32>(static_cast<System::Byte>(23)));
-			this->textBox2->Location = System::Drawing::Point(162, 202);
+			this->textBox2->Location = System::Drawing::Point(84, 207);
 			this->textBox2->MaxLength = 2;
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(353, 14);
+			this->textBox2->Size = System::Drawing::Size(411, 14);
 			this->textBox2->TabIndex = 20;
 			this->textBox2->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox2_TextChanged);
 			// 
 			// label12
 			// 
-			this->label12->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left));
+			this->label12->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label12->AutoSize = true;
 			this->label12->Font = (gcnew System::Drawing::Font(L"Verdana", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label12->Location = System::Drawing::Point(159, 120);
+			this->label12->Location = System::Drawing::Point(81, 140);
 			this->label12->Name = L"label12";
 			this->label12->Size = System::Drawing::Size(236, 17);
 			this->label12->TabIndex = 21;
@@ -342,12 +315,13 @@ namespace SNSRBeta {
 			// 
 			// label13
 			// 
-			this->label13->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left));
+			this->label13->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label13->AutoSize = true;
 			this->label13->Font = (gcnew System::Drawing::Font(L"Verdana", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label13->Location = System::Drawing::Point(159, 182);
+			this->label13->Location = System::Drawing::Point(81, 187);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(242, 17);
 			this->label13->TabIndex = 22;
@@ -356,6 +330,8 @@ namespace SNSRBeta {
 			// 
 			// label14
 			// 
+			this->label14->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label14->AutoSize = true;
 			this->label14->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->label14->Font = (gcnew System::Drawing::Font(L"Verdana", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
@@ -373,19 +349,35 @@ namespace SNSRBeta {
 			this->panel3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->panel3->BackColor = System::Drawing::Color::White;
+			this->panel3->Controls->Add(this->label3);
 			this->panel3->Controls->Add(this->label11);
 			this->panel3->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(13)), static_cast<System::Int32>(static_cast<System::Byte>(17)),
 				static_cast<System::Int32>(static_cast<System::Byte>(23)));
-			this->panel3->Location = System::Drawing::Point(-1, 685);
+			this->panel3->Location = System::Drawing::Point(-1, 662);
 			this->panel3->Margin = System::Windows::Forms::Padding(0);
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(1264, 18);
 			this->panel3->TabIndex = 25;
 			this->panel3->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MyForm::panel3_Paint);
 			// 
+			// label3
+			// 
+			this->label3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->label3->AutoSize = true;
+			this->label3->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Verdana", 8.25F));
+			this->label3->Location = System::Drawing::Point(1123, 0);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(138, 13);
+			this->label3->TabIndex = 18;
+			this->label3->Text = L"Потдержка на Patreon";
+			this->label3->Click += gcnew System::EventHandler(this, &MyForm::label3_Click_1);
+			// 
 			// label6
 			// 
-			this->label6->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->label6->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label6->AutoSize = true;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Verdana", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -398,13 +390,16 @@ namespace SNSRBeta {
 			// 
 			// label16
 			// 
-			this->label16->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->label16->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->label16->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label16->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->label16->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label16->Location = System::Drawing::Point(2, 607);
+			this->label16->Location = System::Drawing::Point(2, 426);
 			this->label16->Name = L"label16";
-			this->label16->Size = System::Drawing::Size(160, 78);
+			this->label16->Size = System::Drawing::Size(1261, 236);
 			this->label16->TabIndex = 0;
 			this->label16->Text = L"Тут может быть ваша реклама";
 			this->label16->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -419,7 +414,7 @@ namespace SNSRBeta {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(13)), static_cast<System::Int32>(static_cast<System::Byte>(17)),
 				static_cast<System::Int32>(static_cast<System::Byte>(23)));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
-			this->ClientSize = System::Drawing::Size(1264, 704);
+			this->ClientSize = System::Drawing::Size(1264, 681);
 			this->Controls->Add(this->label16);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label23);
@@ -443,7 +438,7 @@ namespace SNSRBeta {
 				static_cast<System::Byte>(204)));
 			this->ForeColor = System::Drawing::Color::SteelBlue;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->MinimumSize = System::Drawing::Size(1200, 700);
+			this->MinimumSize = System::Drawing::Size(1150, 560);
 			this->Name = L"MyForm";
 			this->Padding = System::Windows::Forms::Padding(1);
 			this->RightToLeft = System::Windows::Forms::RightToLeft::No;
@@ -517,5 +512,6 @@ private: System::Void pictureBox1_Click_1(System::Object^ sender, System::EventA
 private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e){}
 private: System::Void progressBar1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
+private: System::Void label3_Click_1(System::Object^ sender, System::EventArgs^ e);
 };
 }

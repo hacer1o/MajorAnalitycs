@@ -268,21 +268,11 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
     return 0;
 }
 
-System::Void SNSRBeta::MyForm::MyForm_Load(System::Object^ sender, System::EventArgs^ e)
-{
-	MessageBox::Show("Привет, спасибо что выбрали нас! Это бета версия программы, по этому могут быть баги. Сделано с любовью от @hacerio", "Приветствие");
-	label6->Text = "";
-	label17->Text = "";
-	label18->Text = "";
-	label20->Text = "";
-	label21->Text = "";
-}
-
 System::Void SNSRBeta::MyForm::button1_Click(System::Object^ sender, System::EventArgs^ e)
 {
     int t1, t2;
-    t1 = Convert::ToDouble(textBox1->Text);
-    t2 = Convert::ToDouble(textBox2->Text);
+    t1 = Convert::ToInt32(textBox1->Text);
+    t2 = Convert::ToInt32(textBox2->Text);
     if (t1 == t2 || t1 < 1 || t1 > 30 || t2 < 1 || t2 > 30) {
         label6->Text = "Введите корректные данные";
 		label17->Text = "";
@@ -416,4 +406,19 @@ System::Void SNSRBeta::MyForm::label14_Click(System::Object^ sender, System::Eve
 System::Void SNSRBeta::MyForm::label16_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	MessageBox::Show("Для связи напишите в telegram @hacerio. БЕЗ ПОВОДА НЕ ПИСАТЬ!", "Сдесь может быть ваша реклама");
+}
+
+System::Void SNSRBeta::MyForm::label3_Click_1(System::Object^ sender, System::EventArgs^ e)
+{
+	MessageBox::Show("Вы можете меня потдержать на Patreon: ","Patreon");
+}
+
+System::Void SNSRBeta::MyForm::MyForm_Load(System::Object^ sender, System::EventArgs^ e)
+{
+	MessageBox::Show("Привет, спасибо что выбрали нас! Это бета версия программы, по этому могут быть баги. Сделано с любовью от @hacerio", "Приветствие");
+	label6->Text = "";
+	label17->Text = "";
+	label18->Text = "";
+	label20->Text = "";
+	label21->Text = "";
 }
