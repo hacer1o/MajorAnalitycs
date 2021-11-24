@@ -1,0 +1,2 @@
+@echo off
+C:\WINDOWS\system32\MsiExec.exe /I{4939F905-25A9-4B97-9CEF-CDE0A788F56F}

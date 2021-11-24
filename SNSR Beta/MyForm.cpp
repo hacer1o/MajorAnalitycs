@@ -274,7 +274,7 @@ System::Void SNSRBeta::MyForm::button1_Click(System::Object^ sender, System::Eve
     t1 = Convert::ToInt32(textBox1->Text);
     t2 = Convert::ToInt32(textBox2->Text);
     if (t1 == t2 || t1 < 1 || t1 > 30 || t2 < 1 || t2 > 30) {
-        label6->Text = "Введите корректные данные";
+        label6->Text = "Введите коректные данные";
 		label17->Text = "";
 		label18->Text = "";
 		label20->Text = "";
