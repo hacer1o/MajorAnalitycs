@@ -58,6 +58,9 @@ namespace SNSRBeta {
 	private: System::Windows::Forms::Label^ label6;
 	private: System::Windows::Forms::Label^ label16;
 	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::LinkLabel^ linkLabel1;
+
 
 	private:
 
@@ -96,6 +99,8 @@ namespace SNSRBeta {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label16 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->linkLabel1 = (gcnew System::Windows::Forms::LinkLabel());
 			this->panel3->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -106,9 +111,9 @@ namespace SNSRBeta {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Verdana", 25, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label2->ImageAlign = System::Drawing::ContentAlignment::TopCenter;
-			this->label2->Location = System::Drawing::Point(84, 1);
+			this->label2->Location = System::Drawing::Point(84, 23);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(1176, 66);
+			this->label2->Size = System::Drawing::Size(1176, 44);
 			this->label2->TabIndex = 0;
 			this->label2->Text = L"Major Analytics";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -405,6 +410,40 @@ namespace SNSRBeta {
 			this->label16->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->label16->Click += gcnew System::EventHandler(this, &MyForm::label16_Click);
 			// 
+			// label5
+			// 
+			this->label5->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->label5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label5->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label5->Location = System::Drawing::Point(84, 225);
+			this->label5->Margin = System::Windows::Forms::Padding(3, 0, 3, 3);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(1179, 198);
+			this->label5->TabIndex = 26;
+			this->label5->Text = L"Команда-победитель турнира по версии Major Analytics";
+			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->label5->Click += gcnew System::EventHandler(this, &MyForm::label5_Click_1);
+			// 
+			// linkLabel1
+			// 
+			this->linkLabel1->ActiveLinkColor = System::Drawing::Color::Navy;
+			this->linkLabel1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->linkLabel1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
+			this->linkLabel1->ImageAlign = System::Drawing::ContentAlignment::MiddleRight;
+			this->linkLabel1->LinkColor = System::Drawing::Color::SteelBlue;
+			this->linkLabel1->Location = System::Drawing::Point(84, 1);
+			this->linkLabel1->Name = L"linkLabel1";
+			this->linkLabel1->Size = System::Drawing::Size(1179, 22);
+			this->linkLabel1->TabIndex = 27;
+			this->linkLabel1->TabStop = true;
+			this->linkLabel1->Text = L"Наш сайт";
+			this->linkLabel1->TextAlign = System::Drawing::ContentAlignment::TopRight;
+			this->linkLabel1->VisitedLinkColor = System::Drawing::Color::SteelBlue;
+			this->linkLabel1->LinkClicked += gcnew System::Windows::Forms::LinkLabelLinkClickedEventHandler(this, &MyForm::linkLabel1_LinkClicked);
+			// 
 			// MyForm
 			// 
 			this->AllowDrop = true;
@@ -415,6 +454,8 @@ namespace SNSRBeta {
 				static_cast<System::Int32>(static_cast<System::Byte>(23)));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
 			this->ClientSize = System::Drawing::Size(1264, 681);
+			this->Controls->Add(this->linkLabel1);
+			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label16);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label23);
@@ -513,5 +554,7 @@ private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArg
 private: System::Void progressBar1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void label3_Click_1(System::Object^ sender, System::EventArgs^ e);
+private: System::Void linkLabel1_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e);
+private: System::Void label5_Click_1(System::Object^ sender, System::EventArgs^ e);
 };
 }

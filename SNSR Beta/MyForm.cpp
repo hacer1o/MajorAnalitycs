@@ -400,7 +400,7 @@ System::Void SNSRBeta::MyForm::label5_Click(System::Object^ sender, System::Even
 
 System::Void SNSRBeta::MyForm::label14_Click(System::Object^ sender, System::EventArgs^ e)
 {
-    MessageBox::Show("Это список команд, которые есть в программе. Для работы программы введите номера двух команд, которые будут играть","Information");
+    MessageBox::Show("Это список команд, которые есть в программе. Для работы программы введите номера двух команд, которые будут играть","Информация");
 }
 
 System::Void SNSRBeta::MyForm::label16_Click(System::Object^ sender, System::EventArgs^ e)
@@ -411,6 +411,17 @@ System::Void SNSRBeta::MyForm::label16_Click(System::Object^ sender, System::Eve
 System::Void SNSRBeta::MyForm::label3_Click_1(System::Object^ sender, System::EventArgs^ e)
 {
 	MessageBox::Show("Вы можете меня потдержать на Patreon: ","Patreon");
+}
+
+System::Void SNSRBeta::MyForm::linkLabel1_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e)
+{
+	MessageBox::Show("Сайта ещё нет, пока пусть откроется гугл)) Всё же это Pre-release", "Oops");
+	System::Diagnostics::Process::Start("http://www.google.com/");
+}
+
+System::Void SNSRBeta::MyForm::label5_Click_1(System::Object^ sender, System::EventArgs^ e)
+{
+	MessageBox::Show("Сдесь будет подана информация о победителе турнира по версии Major Analytics. Информация будет автоматически коректироваться через интернет несколько раз", "Информация");
 }
 
 System::Void SNSRBeta::MyForm::MyForm_Load(System::Object^ sender, System::EventArgs^ e)
