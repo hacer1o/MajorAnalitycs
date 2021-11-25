@@ -189,7 +189,7 @@ namespace SNSRBeta {
 			this->label22->AutoSize = true;
 			this->label22->Font = (gcnew System::Drawing::Font(L"Verdana", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label22->Location = System::Drawing::Point(1237, 205);
+			this->label22->Location = System::Drawing::Point(1237, 204);
 			this->label22->Name = L"label22";
 			this->label22->Size = System::Drawing::Size(23, 17);
 			this->label22->TabIndex = 14;
@@ -203,7 +203,7 @@ namespace SNSRBeta {
 			this->label21->AutoSize = true;
 			this->label21->Font = (gcnew System::Drawing::Font(L"Verdana", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label21->Location = System::Drawing::Point(1216, 208);
+			this->label21->Location = System::Drawing::Point(1216, 205);
 			this->label21->Name = L"label21";
 			this->label21->Size = System::Drawing::Size(15, 17);
 			this->label21->TabIndex = 13;
@@ -404,7 +404,7 @@ namespace SNSRBeta {
 				static_cast<System::Byte>(204)));
 			this->label16->Location = System::Drawing::Point(2, 426);
 			this->label16->Name = L"label16";
-			this->label16->Size = System::Drawing::Size(1261, 236);
+			this->label16->Size = System::Drawing::Size(610, 236);
 			this->label16->TabIndex = 0;
 			this->label16->Text = L"Тут может быть ваша реклама";
 			this->label16->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -418,10 +418,10 @@ namespace SNSRBeta {
 			this->label5->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label5->Location = System::Drawing::Point(84, 225);
+			this->label5->Location = System::Drawing::Point(611, 426);
 			this->label5->Margin = System::Windows::Forms::Padding(3, 0, 3, 3);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(1179, 198);
+			this->label5->Size = System::Drawing::Size(652, 233);
 			this->label5->TabIndex = 26;
 			this->label5->Text = L"Команда-победитель турнира по версии Major Analytics";
 			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;

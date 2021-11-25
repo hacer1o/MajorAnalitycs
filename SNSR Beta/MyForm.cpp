@@ -14,7 +14,6 @@ using namespace System::Windows::Forms;
 using namespace System::Data;
 using namespace System::Drawing;
 using namespace System::Threading;
-using namespace std;
 
 const int l1_arr = 300;
 const int l2_arr = 100;
