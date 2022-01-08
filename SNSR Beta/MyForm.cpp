@@ -4,6 +4,7 @@
 #include <iostream>
 #include <cmath>
 #include <string>
+#include <socketapi.h>
 
 using namespace std;
 using namespace SNSRBeta;
@@ -392,11 +393,6 @@ System::Void SNSRBeta::MyForm::button1_Click(System::Object^ sender, System::Eve
 	}
 }
 
-System::Void SNSRBeta::MyForm::label5_Click(System::Object^ sender, System::EventArgs^ e)
-{
-	MessageBox::Show("Разработчик @hacerio. Особая благодарность @vadimbrovich:)", "");
-}
-
 System::Void SNSRBeta::MyForm::label14_Click(System::Object^ sender, System::EventArgs^ e)
 {
     MessageBox::Show("Это список команд, которые есть в программе. Для работы программы введите номера двух команд, которые будут играть","Информация");
@@ -404,7 +400,7 @@ System::Void SNSRBeta::MyForm::label14_Click(System::Object^ sender, System::Eve
 
 System::Void SNSRBeta::MyForm::label16_Click(System::Object^ sender, System::EventArgs^ e)
 {
-	MessageBox::Show("Для связи напишите в telegram @hacerio. БЕЗ ПОВОДА НЕ ПИСАТЬ!", "Сдесь может быть ваша реклама");
+	MessageBox::Show("hacerio@dnmx.org", "Сдесь может быть ваша реклама");
 }
 
 System::Void SNSRBeta::MyForm::label3_Click_1(System::Object^ sender, System::EventArgs^ e)
@@ -421,6 +417,11 @@ System::Void SNSRBeta::MyForm::linkLabel1_LinkClicked(System::Object^ sender, Sy
 System::Void SNSRBeta::MyForm::label5_Click_1(System::Object^ sender, System::EventArgs^ e)
 {
 	MessageBox::Show("Сдесь будет подана информация о победителе турнира по версии Major Analytics. Информация будет автоматически коректироваться через интернет несколько раз", "Информация");
+}
+
+System::Void SNSRBeta::MyForm::linkLabel2_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e)
+{
+	MessageBox::Show("Пока ещё нет Patreon у меня. Скоро будет", "Oops");
 }
 
 System::Void SNSRBeta::MyForm::MyForm_Load(System::Object^ sender, System::EventArgs^ e)
